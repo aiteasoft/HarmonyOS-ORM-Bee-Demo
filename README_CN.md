@@ -37,7 +37,7 @@ Query  : 查询第2条开始的一页数据(5条);
 Bee可用于Harmony,也可用于Android, 也可开发JavaWeb(JDBC),   
 一个ORM工具,就可让你在各种环境中使用;   
 使用Bee,在Harmony和Android两个环境,可以用同一套访问DB的代码,    
-提高代码重用;节省人力物力!
+提高代码重用;节省人力物力!   
 
 ### 效果图
 <img src="首页.png"  width="620" height="270">  
