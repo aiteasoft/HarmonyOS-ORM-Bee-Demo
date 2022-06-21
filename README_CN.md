@@ -40,6 +40,6 @@ Bee可用于Harmony,也可用于Android, 也可开发JavaWeb(JDBC),
 提高代码重用;节省人力物力!   
 
 ### 效果图
-<img src="首页.png"  width="620" height="270">  
-<img src="screenshots\性能测试1.png"  width="620" height="270">  
-<img src="screenshots\性能测试2.png"  width="620" height="270">  
+<img src="首页.png">  
+<img src="性能测试1.png">  
+<img src="性能测试2.png">  
