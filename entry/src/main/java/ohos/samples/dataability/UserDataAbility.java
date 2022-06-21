@@ -17,7 +17,6 @@ package ohos.samples.dataability;
 
 import ohos.aafwk.ability.Ability;
 import ohos.aafwk.content.Intent;
-import ohos.hiviewdfx.HiLogLabel;
 import org.teasoft.beex.harmony.BeeConfigInit;
 import org.teasoft.beex.harmony.ContextRegistry;
 import org.teasoft.beex.harmony.RdbOpenCallbackRegistry;
@@ -26,8 +25,6 @@ import org.teasoft.beex.harmony.RdbOpenCallbackRegistry;
  * FileDataAbility
  */
 public class UserDataAbility extends Ability {
-    private static final String TAG = UserDataAbility.class.getSimpleName();
-    private static final HiLogLabel LABEL_LOG = new HiLogLabel(3, 0xD000F00, TAG);
     @Override
     public void onStart(Intent intent) {
         super.onStart(intent);

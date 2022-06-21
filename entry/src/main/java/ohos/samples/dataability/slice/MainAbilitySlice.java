@@ -146,8 +146,9 @@ public class MainAbilitySlice extends AbilitySlice {
         HiLog.info(LABEL_LOG, "----------------batchExecute");
 
         getGlobalTaskDispatcher(TaskPriority.DEFAULT).asyncDispatch(() -> {
-            testFun();
+
             testMost();
+            testFun();
         });
      }
 
@@ -226,24 +227,11 @@ public class MainAbilitySlice extends AbilitySlice {
     private static final String prefix="----------------";
     private void testMost() {
         System.out.println("----------------测试开始--");
+        System.out.println("----------------性能测试开始--");
+
         BeeTest beeTest = new BeeTest();
-//		beeTest.testCreateTable();
-		beeTest.testInsertAndReturn();
 
-		beeTest.testMoretable();
-		beeTest.testBatchInsert();
-//		beeTest.testFun(); //加测输出结果
-
-        beeTest.testSelectSome();
-		beeTest.testTran();
-
-		beeTest.testRollback(false);
-		beeTest.testRollback(true);
-        beeTest.testSelectSome();
-
-        beeTest.testProblem();//SQL 注入测试
-
-
+        //测试性能,可先关闭日志输出
         //操作1万条数据,性能测试
         beeTest.testDelete10000();
 
@@ -284,7 +272,23 @@ public class MainAbilitySlice extends AbilitySlice {
         appendStr.append("查询1w使用时间:" + need2).append(System.lineSeparator());
         appendStr.append("删除1w使用时间:" + need3).append(System.lineSeparator());
         appendStr.append("插入1w(分2批)使用时间:" + need4).append(System.lineSeparator());
+        System.out.println("----------------性能测试结束--");
 
+//		beeTest.testCreateTable();
+		beeTest.testInsertAndReturn();
+
+		beeTest.testMoretable();
+		beeTest.testBatchInsert();
+//		beeTest.testFun(); //加测输出结果
+
+        beeTest.testSelectSome();
+		beeTest.testTran();
+
+		beeTest.testRollback(false);
+		beeTest.testRollback(true);
+        beeTest.testSelectSome();
+
+        beeTest.testProblem();//SQL 注入测试
 
         getUITaskDispatcher().asyncDispatch(() -> {
             logText.setText("");

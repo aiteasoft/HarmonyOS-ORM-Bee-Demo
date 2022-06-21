@@ -125,8 +125,7 @@ public class BeeTest {
 	}
 	
 	public int testBatchInsert10000Div2() {
-		
-		Tb_inaccount a;
+		Tb_inaccount a;//命名不规范,忽学. 只是为了测更多场景
 		String addr="aaa";
 		List<Tb_inaccount> list=new ArrayList<>();
 		for (int i = 1; i <= 10000; i++) {
@@ -136,10 +135,7 @@ public class BeeTest {
 			a.setMoney(0.618);
 			list.add(a);
 		}
-		
-//		return suidRich.insert(list);
-		
-		return suidRich.insert(list,5000); 
+		return suidRich.insert(list,5000);
 	}
 
 	public void testQuery10000() {
