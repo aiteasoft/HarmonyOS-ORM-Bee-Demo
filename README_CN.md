@@ -5,11 +5,11 @@ Android、HarmonyOS关系数据库都是用SQLite数据库.
 **Bee可用于Android、HarmonyOS环境访问SQLite数据库,专门对两套环境作了优化(V1.17)**  
 在**Android和Harmony两个环境**,可以用**同一套Bee代码访问DB**  
 
-**ORM Bee 简单易用，文件小，性能好；同时支持 Android 和 Harmony，还支持 JDBC (可在 JavaWeb 等开发中使用)。**
+**ORM Bee 简单易用，文件小，性能好；同时支持 Android 和 Harmony，还支持 JDBC (可在 JavaWeb 等开发中使用)。**  
 
 在 **Android和Harmony两个环境**,可以用**同一套Bee代码访问DB**, 提高代码重用，节省人力物。
 
-Bee，互联网新时代的 Java ORM 工具，**更快、更简单、更自动**，**开发速度快，运行快，更智能**！
+Bee，互联网新时代的 Java ORM 工具，**更快、更简单、更自动**，**开发速度快，运行快，更智能**！  
 
 **Bee** 网址:  
 https://github.com/automvc/bee  
