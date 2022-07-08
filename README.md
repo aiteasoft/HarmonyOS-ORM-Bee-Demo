@@ -38,7 +38,7 @@ Query  : 查询第2条开始的一页数据(5条);
 回首页说明:跳转到首页说明.   
 
 
-### 约束与限制   
+### 约束与限制
 
 本示例为Bee在Harmony中使用面向对象方式操作数据库的使用Demo.   
 Bee可用于Harmony,也可用于Android, 也可开发JavaWeb(JDBC),   
