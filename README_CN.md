@@ -1,4 +1,4 @@
-## ORM Bee Demo in HarmonyOS  
+## ORM Bee Demo in HarmonyOS
 
 Android、HarmonyOS关系数据库都是用SQLite数据库.  
 希望通过ORM工具,在两种环境能使用同一套代码访问DB.  
